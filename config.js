@@ -3,17 +3,16 @@ var config = {
     // The length of the sentence can be any, you can write ten sentences or 20 sentences
     // Try not to exceed 15 words in each sentence, otherwise the display effect may not be very good
     texts: [
-        "Send to me", //Here, the last comma at the end of each sentence must be in English!! Very important!!
+        "Its your birthday today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
         "Beloved Little Cutie", // Same as above...
-        "Today is your birthday",
-        "This is where we are together",
-        "It's the third birthday",
-        "Last year's birthday",
-        "Remember what I ate at Wang Po Chuan Chuan",
-        "I want to eat well this year",
-        "I want to feed my lovely pigs",
-        "Then take away",
-        "YAMI~~",
+        "I hope your day is filled with..",
+        "lots of love and laughter!",
+        "May life bring you everything..",
+        "you are dreaming about.",
+        "Once Again",
+        "Happy Birthday",
+        "From",
+        "~~Naveen~~",
     ],
     /**
      * imgs can be left blank, but if you want to fill in, you must follow the format below
@@ -25,18 +24,18 @@ var config = {
      * Tip: The picture is best to use a square or close to a square, it looks better
      */
     imgs: {
-        "Beloved Little Cutie": "./imgs/xiaokeai.png",
+        "Beloved Little Cutie": "./imgs/APPALANAIDU1.jpg",
         // "Today is your birthday": "./imgs/birthday.jpg",
     },
     // Button text description, the following is the default button text, in English, you can change it to your favorite text
     desc: {
-        turn_on: "Turn On Lights",
-        play: "Play Music",
-        bannar_coming: "Let's Decorate",
-        balloons_flying: "Fly With Balloons",
-        cake_fadein: "Most Delicious Cake Ever",
+        turn_on: "Let's Turn On Lights",
+        play: "Now Start Music",
+        bannar_coming: "Let's see Decoratations",
+        balloons_flying: "Now Fly With Balloons",
+        cake_fadein: "See Most Delicious Cake Ever",
         light_candle: "Light Candle",
         wish_message: "Happy Birthday",
-        story: "small mesage for you",
+        story: "A small mesage for you",
     }
 };

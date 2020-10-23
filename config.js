@@ -6,12 +6,12 @@ var config = {
         "Its your birthday today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
         "Beloved Little Cutie", // Same as above...
         "I hope your day is filled with..",
-        "lots of love and laughter!",
+        "lots of love and laughter!!",
         "May life bring you everything..",
-        "you are dreaming about.",
-        "Once Again",
+        "you are dreaming about...",
+        "Once Again @",
         "Happy Birthday",
-        "From",
+        "From ",
         "~~Naveen~~",
     ],
     /**
@@ -31,7 +31,7 @@ var config = {
     desc: {
         turn_on: "Let's Turn On Lights",
         play: "Now Start Music",
-        bannar_coming: "Let's see Decoratations",
+        bannar_coming: "Let's Decorate",
         balloons_flying: "Now Fly With Balloons",
         cake_fadein: "See Most Delicious Cake Ever",
         light_candle: "Light Candle",

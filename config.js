@@ -27,6 +27,7 @@ var config = {
      */
     imgs: {
         "Beloved Little Cutie": "./imgs/APPALANAIDU1.jpg",
+        "lots of love and laughter.!!": "./imgs/laugh.jpg",
         "Make your parents feel proud of you": "./imgs/proud.jpg",
         "As they were working hard for you": "./imgs/hard.jpg",
         "From Naveen!!": "./imgs/naveen.jpg",
@@ -38,7 +39,7 @@ var config = {
         turn_on: "Let's Turn On Lights",
         play: "Now Start Music",
         bannar_coming: "Let's Decorate",
-        balloons_flying: "Now Fly With Balloons",
+        balloons_flying: "Now feel flying Balloons",
         cake_fadein: "See Most Delicious Cake Ever",
         light_candle: "Light Candle",
         wish_message: "Happy Birthday",

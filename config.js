@@ -6,13 +6,15 @@ var config = {
         "Its your birthday today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
         "Beloved Little Cutie", // Same as above...
         "I hope your day is filled with..",
-        "lots of love and laughter!!",
+        "lots of love and laughter.!!",
+        "Make your parents feel proud of you",
+        "Never ever hurt or cheat them..",
+        "As they were working hard for you",
         "May life bring you everything..",
-        "you are dreaming about...",
-        "Once Again @",
+        "you are dreaming about!",
+        "Once Again Wishing you..",
         "Happy Birthday",
-        "From ",
-        "~~Naveen~~",
+        "From Naveen!!",
     ],
     /**
      * imgs can be left blank, but if you want to fill in, you must follow the format below
@@ -25,6 +27,10 @@ var config = {
      */
     imgs: {
         "Beloved Little Cutie": "./imgs/APPALANAIDU1.jpg",
+        "Make your parents feel proud of you": "./imgs/proud.jpg",
+        "As they were working hard for you": "./imgs/hard.jpg",
+        "From Naveen!!": "./imgs/naveen.jpg",
+        
         // "Today is your birthday": "./imgs/birthday.jpg",
     },
     // Button text description, the following is the default button text, in English, you can change it to your favorite text

@@ -33,9 +33,7 @@ var config = {
         "As they were working hard for you": "./imgs/hard.jpg",
         "Think of your parents before doing any work": "./imgs/hard.jpg",
         "you are dreaming about future!": "./imgs/life.jpg",
-        "Happy Birthday": "./imgs/naveen.jpg",
-        "From Naveen!!": "./imgs/naveen2.jpg",
-        
+        "Happy Birthday": "./imgs/naveen.jpg",        
         // "Today is your birthday": "./imgs/birthday.jpg",
     },
     // Button text description, the following is the default button text, in English, you can change it to your favorite text

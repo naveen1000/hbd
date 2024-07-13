@@ -3,7 +3,7 @@ var config = {
     // The length of the sentence can be any, you can write ten sentences or 20 sentences
     // Try not to exceed 15 words in each sentence, otherwise the display effect may not be very good
     texts: [
-        "Its your birthday today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
+        "Its your birth day today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
         "Beloved Little baby", // Same as above...
         "I hope your birthday is as",
         "amazing as you are, my beautiful girlfriend.",
@@ -31,10 +31,13 @@ var config = {
         "Beloved Little baby": "./imgs/little_cutie.jpg",
         "lots of love and laughter.!!": "./imgs/laughter.jpg",
         "amazing as you are, my beautiful girlfriend.": "./imgs/amazing.jpg",
+        "You mean a lot to me": "./imgs/alot.jpg",
+        "you deserve nothing less..": "./imgs/nothing_less.jpg",
+        "May life bring you everything..": "./imgs/everything.jpg",
         "you are dreaming about future!": "./imgs/life.jpg",
         "No one lightened up my life like you": "./imgs/lightenup.jpg",
-        "Think of your parents before doing any work": "./imgs/hard.jpg",
-        "Happy Birthday": "./imgs/pleasant.jpg",        
+        "Once again Wishing you a very pleasant..": "./imgs/pleasant.jpg",
+        " !! Happy Birthday !! ": "./imgs/bday2.jpg",        
         "from your Vee!!": "./imgs/naveen2.jpg",
     },
     // Button text description, the following is the default button text, in English, you can change it to your favorite text

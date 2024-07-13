@@ -28,14 +28,14 @@ var config = {
      * Tip: The picture is best to use a square or close to a square, it looks better
      */
     imgs: {
-        "Beloved Little Cutie": "./imgs/APPALANAIDU1.jpg",
-        "lots of love and laughter.!!": "./imgs/laugh.jpg",
-        "Make your parents feel proud of you": "./imgs/proud.jpg",
-        "As they were working hard for you": "./imgs/hard.jpg",
-        "Think of your parents before doing any work": "./imgs/hard.jpg",
+        "Beloved Little baby": "./imgs/little_cutie.jpg",
+        "lots of love and laughter.!!": "./imgs/laughter.jpg",
+        "amazing as you are, my beautiful girlfriend.": "./imgs/amazing.jpg",
         "you are dreaming about future!": "./imgs/life.jpg",
-        "Happy Birthday": "./imgs/naveen.jpg",        
-        // "Today is your birthday": "./imgs/birthday.jpg",
+        "No one lightened up my life like you": "./imgs/lightenup.jpg",
+        "Think of your parents before doing any work": "./imgs/hard.jpg",
+        "Happy Birthday": "./imgs/pleasant.jpg",        
+        "from your Vee!!": "./imgs/naveen2.jpg",
     },
     // Button text description, the following is the default button text, in English, you can change it to your favorite text
     desc: {

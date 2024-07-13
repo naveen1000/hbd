@@ -4,18 +4,19 @@ var config = {
     // Try not to exceed 15 words in each sentence, otherwise the display effect may not be very good
     texts: [
         "Its your birthday today", //Here, the last comma at the end of each sentence must be in English!! Very important!!
-        "Beloved Little Cutie", // Same as above...
-        "I hope your day is filled with..",
-        "lots of love and laughter.!!",
-        "Make your parents feel proud of you",
-        "Never ever hurt or cheat them..",
-        "As they were working hard for you",
-        "Think of your parents before doing any work",
+        "Beloved Little baby", // Same as above...
+        "I hope your birthday is as",
+        "amazing as you are, my beautiful girlfriend.",
+        "You mean a lot to me",
+        "you deserve nothing less..",
         "May life bring you everything..",
         "you are dreaming about future!",
-        "Once Again Wishing you a very pleasant..",
-        "Happy Birthday",
-        "From Naveen!!",
+        "No one lightened up my life like you",
+        "Thank you for being by my side",
+        "and sharing your life with me",
+        "Once again Wishing you a very pleasant..",
+        " !! Happy Birthday !! ",
+        "from your Vee!!",
     ],
     /**
      * imgs can be left blank, but if you want to fill in, you must follow the format below

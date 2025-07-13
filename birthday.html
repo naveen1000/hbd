@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Baby 💖</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      height: 100%;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    button {
+      background-color: #ffffff44;
+      color: white;
+      border: 2px solid white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 10px;
+      margin: 15px 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffffff66;
+    }
+
+    section {
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .slideshow-container {
+      max-width: 500px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .slides {
+      display: none;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .note-box {
+      background: #ffffff33;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: 30px auto 0;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      backdrop-filter: blur(5px);
+      color: #fff;
+    }
+
+    audio {
+      display: none;
+    }
+
+    footer {
+      background: #ffffff22;
+      padding: 20px;
+      font-size: 0.9rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Fireworks canvas */
+    .fireworks {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      p, .note-box { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fireworks Layer -->
+  <div class="fireworks">
+    <canvas id="fireworksCanvas"></canvas>
+  </div>
+
+  <!-- Main Header -->
+  <header>
+    <h1>Happy Birthday, Baby! 🎂🎉</h1>
+    <p>
+      You light up my life just like these fireworks tonight. Today is about celebrating YOU — your joy, your strength, and all the love you bring. 💖
+    </p>
+    <button onclick="toggleGallery()">📸 Show Our Memories</button>
+    <button onclick="toggleNote()">💌 Read My Note</button>
+  </header>
+
+  <!-- Slideshow Section -->
+  <section id="gallerySection" class="hidden">
+    <div class="slideshow-container">
+
+      <img class="slides" src="shilp1.jpg" alt="Memory 3">
+      <img class="slides" src="cable1.jpg" alt="Memory 4">
+      <img class="slides" src="hussain1.jpg" alt="Memory 4">
+	  <img class="slides" src="cycle1.jpg" alt="Memory 1">
+      <img class="slides" src="office.jpg" alt="Memory 2">
+      <img class="slides" src="graph1.jpg" alt="Memory 4">
+      <img class="slides" src="Memory11.jpg" alt="Memory 4">
+    </div>
+  </section>
+
+  <!-- Personal Note Section -->
+  <section id="noteSection" class="hidden">
+    <div class="note-box">
+      <h2>My lovely Baby, 💖</h2>
+      <p>
+        Every moment with you feels magical. Your smile melts my heart, your voice calms my soul. On this occasion, I want you to know that you are my love forever.
+        <br><br>
+        I promise to be there through all your highs and lows. You’re not just my love — you are my best friend, my reason to smile, my world.
+        <br><br>
+        May your birthday be filled with all the love, laughter, and happiness you bring into mine every day. I promise to make today (and every day) as special as you are.
+        <br><br>
+        I love you more than words can ever say. 💫💐<br>
+        ❤️ Forever yours, Bunny 🐇
+      </p>
+    </div>
+  </section>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Footer -->
+  <footer>
+    Made with ❤️ just for you, Vaibhavi.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+
+    function toggleGallery() {
+      const gallery = document.getElementById("gallerySection");
+      gallery.classList.toggle("hidden");
+      showSlides();
+    }
+
+    function toggleNote() {
+      const note = document.getElementById("noteSection");
+      note.classList.toggle("hidden");
+    }
+
+    // Fireworks animation
+    const canvas = document.getElementById("fireworksCanvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function random(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    class Firework {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = random(0, canvas.width);
+        this.y = canvas.height;
+        this.color = `hsl(${random(0, 360)}, 100%, 70%)`;
+        this.dy = random(-10, -5);
+        this.exploded = false;
+        this.particles = [];
+      }
+
+      update() {
+        if (!this.exploded) {
+          this.y += this.dy;
+          this.dy += 0.2;
+          if (this.dy >= 0) {
+            this.exploded = true;
+            for (let i = 0; i < 30; i++) {
+              this.particles.push(new Particle(this.x, this.y, this.color));
+            }
+          }
+        }
+        this.particles.forEach(p => p.update());
+      }
+
+      draw() {
+        if (!this.exploded) {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+        this.particles.forEach(p => p.draw());
+      }
+    }
+
+    class Particle {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.radius = 2;
+        this.dx = random(-3, 3);
+        this.dy = random(-3, 3);
+        this.alpha = 1;
+      }
+
+      update() {
+        this.x += this.dx;
+        this.y += this.dy;
+        this.alpha -= 0.02;
+      }
+
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = this.alpha;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    const fireworks = Array.from({ length: 6 }, () => new Firework());
+
+    function animate() {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      fireworks.forEach((f, i) => {
+        f.update();
+        f.draw();
+        if (f.exploded && f.particles.every(p => p.alpha <= 0)) {
+          fireworks[i] = new Firework();
+        }
+      });
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+</body>
+</html>
